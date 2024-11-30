@@ -1,14 +1,12 @@
 body {
-    /**
-    Estilos agregados por el estudiante
-    IMPORTANTE: Agregar estilos de fuente
-    */
+    background-color:#2067a5;
+    color:antiquewhite;
+
 }
 
-h1 {
-    /**
-    Estilos agregados por el estudiante para el título
-    */
+h1 { 
+    background-color: #2067a5;
+
 }
 
 h2 {
