@@ -27,4 +27,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Raíz del repositorio donde están los archivos HTML
+          publish_dir: ./  # El directorio con tu contenido HTML
+          allow_empty_commit: true  # Opcional, útil para evitar errores si no hay cambios
+
