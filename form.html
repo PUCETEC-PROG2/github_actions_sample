@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar Pokémon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ingresar Pokémon</h1>
+    <form id="pokemon-form"> 
+        <label for="pokemon-name">Nombre del Pokémon:</label>
+        <input type="text" id="pokemon-name" name="pokemon-name">
+
+        <label for="pokemon-type">Tipo del Pokémon:</label>
+        <select id="pokemon-type" name="pokemon-type">
+            <option value="electrico">electrico</option>
+            <option value="fuego">fuego</option>
+            <option value="planta">planta</option>
+        </select>
+        <label for="pokemon-level">Nivel del Pokémon:</label>
+        <input type="text" id="pokemon-level" name="pokemon-level">
+
+        <label for="pokemon-attack">Ataque del Pokémon:</label>
+        <input type="text" id="pokemon-attack" name="pokemon-attack">
+
+        <button type="submit">Agregar</button>
+
+    </form>
+</body>
+</html>
