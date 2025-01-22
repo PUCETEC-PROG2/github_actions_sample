@@ -1,11 +1,13 @@
-# Laboratorio 6. Taller de refuerzo HTML y CSS
+# Laboratorio de Github actions.
 
-Este laboratorio está diseñado para que los participantes puedan aprender y reforzar sus conocimientos de HTML y CSS mediante la creación de una lista de Pokemones y un formulario para agregar nuevos Pokemones. Utilizando pruebas unitarias y autograding con Jest para asegurar que las vistas están correctamente estructuradas.
+Este laboratorio está diseñado para trabajar con Github actions creando workflows para despliegue
 
 ## Tareas a realizar
-1. Crear una lista de Pokemones en el archivo index.hmtml.
-2. Crear un formulario para el ingreso de un nuevo Pokémon.
-3. IMPORTANTE!!! Editar el archivo styles.css con las propiedades que el estudiante crea conveniente para mejorar la apariencia de los componentes gráficos
+1. Crear el primer workflow de github
+2. Configurar el apartado de github pages
+3. Configurar Workflow permissions
+4. Ejecutar las pruebas unitarias
+5. Desplegar el sitio en github pages
 
 ## Prerrequisitos
 
