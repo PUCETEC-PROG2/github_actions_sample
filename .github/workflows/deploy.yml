@@ -1,40 +1,30 @@
-name: Deploy HTML Site to GitHub Pages
+name: Deployar el sitio HTML en Github Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # Cambia "main" por la rama que uses, si es diferente.
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Configuración de repositorio
+      # Clonar el repositorio
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Configuración de Node.js
-      - name: Setup Node.js
+      # Configurar Node.js y ejecutar pruebas
+      - name: Setup Node.js and run tests
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
+      - run: npm install
+      - run: npm test
 
-      # Instalación de dependencias
-      - name: Install dependencies
-        run: npm install
-
-      # Ejecutar pruebas unitarias
-      - name: Run tests
-        run: npm test
-
-      # Construir el sitio si las pruebas son exitosas
-      - name: Build site
-        run: npm run build # Cambia esto si necesitas un paso de construcción
-
-      # Deploy en GitHub Pages
+      # Desplegar a GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # Cambia este valor al directorio de salida de tu proyecto
+          publish_dir: ./  # Raíz del repositorio donde están los archivos HTML
